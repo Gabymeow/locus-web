@@ -7,29 +7,43 @@ body {
     font-weight: 500;
 
 }
-.conteiner{
-    width: 85%;
-    margin: 0 auto;
-    padding: 0 10px;
-}
 
 h1, h2 {
-    font-size: 70px;
-    font-weight: 800; 
+    font-size: 60px;
+    font-weight: 800;
+
+    color: #1C2323;
+}
+.button {
+    padding: 10px 20px;
+    background-color: #58A9A5;
+    border: 5px solid #58A9A5;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+    background-color: #468581;
+    border: 5px solid #468581;
 }
 
 /* header */
 .main-header {
-    margin-top: 95px;
+    width: 95%;
+    margin: 20px auto;
+}
+.conteiner {
+    width: 95%;
+    margin: 20px auto;
 }
 
-
-.main-navigation {
+.main-navigation-wrapper {
     display: flex;
-    justify-content: start;
-    align-items:center;
+    justify-content: space-between;
 }
-
 
 .main-navigation-item {
     float:left;
@@ -38,6 +52,8 @@ h1, h2 {
 
 
 .main-navigation-list {
+    margin: 0;
+
     list-style: none;
 }
 
@@ -52,29 +68,53 @@ h1, h2 {
 .main-navigation-list a:hover
  {
     text-decoration: underline;
-
     
     color: #58A9A5;
-
 }
 
-.main-navigation-wrapper {
-    
+/* banner */
+
+.main-banner {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 105px;
 }
 
-.logo-article {
-    margin-right: 100px;
-    padding: 10px;
+.main-banner-left p {
+    margin-bottom: 50px;
 
-    font-size: 35px;
-    font-weight: 800;
-    color: #58A9A5;
-}
-
-.main-header-logo {
     font-size: 30px;
-    font-weight: 800;
-    text-decoration: none;
+    font-weight: 400;
+    color: #404242;
+}
 
-    color: #58A9A5;
+/* how-it-works */
+.main-how-it-works {
+    margin-top: 120px;
+
+    text-align: center;
+}
+
+.main-how-it-works p{
+    color: #404242;
+    font-weight: 400px;
+    font-size: 30px;
+}
+
+.main-how-it-works-first {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    background-color: #CCF0E6;
+}
+
+.main-how-it-works-first-right {
+    background-color: #CCF0E6;
+}
+
+.main-how-it-works-first-right p {
+    font-size: 20px;
+    font-weight: 500;   
 }
